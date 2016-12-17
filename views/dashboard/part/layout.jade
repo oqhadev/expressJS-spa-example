@@ -1,0 +1,65 @@
+if(!isAjax)
+  doctype html
+  html(lang='en')
+    head
+      meta(charset='utf-8')
+      meta(http-equiv='X-UA-Compatible', content='IE=edge')
+      meta(name='viewport', content='width=device-width, initial-scale=1.0')
+      meta(name='description', content='Neon Admin Panel')
+      meta(name='author', content='')
+      title Neon | Collapsed Sidebar
+      link(rel='stylesheet', href='/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css')
+      link(rel='stylesheet', href='/css/font-icons/entypo/css/entypo.css')
+      //link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic')
+      link(rel='stylesheet', href='/css/bootstrap.css')
+      link(rel='stylesheet', href='/css/neon-core.css')
+      link(rel='stylesheet', href='/css/neon-theme.css')
+      link(rel='stylesheet', href='/css/neon-forms.css')
+      link(rel='stylesheet', href='/css/custom.css')
+      link(rel='stylesheet', href='/css/pace.css')
+      script(src='/js/jquery-1.11.0.min.js')
+      script(src='/js/dynamicpage.js')
+      script(src='/js/pace.js')
+      script(src='/js/bootstrap-tagsinput.min.js')
+
+      link(rel='stylesheet' type='text/css', href='/js/datatables/datatables.min.css')
+  
+
+      //if lt IE 9
+        script(src='/js/ie8-responsive-file-warning.js')
+      // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+      //if lt IE 9
+        script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+        script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+    body.page-body(data-url='http://neon.dev')
+      .page-container.sidebar-collapsed
+        include menu
+
+
+        .main-content
+          include topbar
+          .utama
+           #isi
+              block content
+          // Footer
+          br
+          footer.main.text-right(style=" position: absolute;right: 0; bottom: 0;  left: 0;")
+            |OqhaDev   
+            i.entypo-heart
+            |  2016 &nbsp; &nbsp; &nbsp; 
+             
+      // Bottom Scripts
+      script(src='/js/gsap/main-gsap.js')
+      script(src='/js/joinable.js')
+      script(src='/js/resizeable.js')
+      script(src='/js/neon-api.js')
+      script(src='/js/neon-chat.js')
+      script(src='/js/neon-custom.js')
+      script(src='/js/bootstrap.js')
+else
+  doctype html
+  html(lang='en')
+    head
+    .utama
+      #isi
+        block content

@@ -1,0 +1,44 @@
+extends part/layout
+
+  
+block content
+  .col-md-6.col-sm-8.col-xs-12.pull-left.clearfix(style="height:44px;margin-left:-15px;margin-top:-15px;")
+             h2 Anime Baru
+  ol.breadcrumb.bc-3
+            li
+              a(href='index.html')
+                i.entypo-home
+                | Home
+            li Anime
+            li.active
+              strong Baru
+  .row
+    .col-md-8.panel-gray.clearfix
+       .panel-body
+        .form-group
+          input.form-control(placeholder="Judul")
+        .form-group
+          textarea.form-control(placeholder="Sinopsis",style="height:300px;")
+        .form-group
+          input.form-control(placeholder="Link")
+    
+    .col-md-4.panel-gray
+       .panel-heading
+          .panel-title.
+                      Opsi
+       .panel-body 
+        .form-group
+          label Genre
+          input.tagsinput.form-control(type="text",placeholder="")
+        .form-group
+          label Cover
+          input.form-control(type="file",placeholder="Tag")
+          div img preview
+        .form-group
+
+       .panel-footer
+         a.btn.btn-success.pull-right Save 
+         .checkbox(style="display:inline-block")
+          label Publish
+           input.icheck(type="checkbox",placeholder="asdas",checked)
+   

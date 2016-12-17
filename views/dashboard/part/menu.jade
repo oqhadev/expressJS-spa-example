@@ -1,0 +1,39 @@
+.sidebar-menu
+        header.logo-env
+          // logo
+          .logo
+            a(href='index.html')
+              img(src='/images/logo@2x.png', width='120', alt='')
+          // logo collapse icon
+          .sidebar-collapse
+            a.sidebar-collapse-icon.with-animation(href='#')
+              // add class "with-animation" if you want sidebar to have animation during expanding/collapsing transition
+              i.entypo-menu
+          // open/close menu icon (do not remove if you want to enable menu on mobile devices)
+          .sidebar-mobile-menu.visible-xs
+            a.with-animation(href='#')
+              // add class "with-animation" to support animation
+              i.entypo-menu
+        ul#main-menu
+          // add class "multiple-expanded" to allow multiple submenus to open
+          // class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active"
+          // Search Bar
+          li
+            a.link(href='/dashboard')
+              i.entypo-home
+              span Home
+          li
+            a.link(href='/dashboard/user')
+              i.entypo-user
+              span User
+          li
+            a(href='#')
+              i.entypo-doc
+              span Anime
+            ul
+              li
+                a.link(href='/dashboard/anime/baru')
+                  span Tambah
+              li
+                a.link(href='/dashboard/anime')
+                  span List

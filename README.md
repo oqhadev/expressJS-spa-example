@@ -1,0 +1,1 @@
+<h1>Example for SPA website with nodejs+expressjs+jqueryAjax</h1>

@@ -1,0 +1,139 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    | &#x9;
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    | &#x9;
+    | &#x9;
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    | &#x9;
+    meta(name='description', content='Neon Admin Panel')
+    | &#x9;
+    meta(name='author', content='')
+    | &#x9;
+    | &#x9;
+    title Neon | Login
+    | &#x9;
+    | &#x9;
+    link(rel='stylesheet', href='/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css')
+    | &#x9;
+    link(rel='stylesheet', href='/css/font-icons/entypo/css/entypo.css')
+    | &#x9;
+    link(rel='stylesheet', href='/css/bootstrap.css')
+    | &#x9;
+    link(rel='stylesheet', href='/css/neon-core.css')
+    | &#x9;
+    link(rel='stylesheet', href='/css/neon-theme.css')
+    | &#x9;
+    link(rel='stylesheet', href='/css/neon-forms.css')
+    | &#x9;
+    link(rel='stylesheet', href='/css/custom.css')
+    | &#x9;
+    script(src='/js/jquery-1.11.0.min.js')
+    //if lt IE 9
+      script(src='/js/ie8-responsive-file-warning.js')
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      | &#x9;&#x9;
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body.page-body.login-page.login-form-fall(data-url='http://neon.dev')
+    // This is needed when you send requests via Ajax
+    script(type='text/javascript').
+      var baseurl = 'http://localhost/login-admin';
+    .login-container
+      .login-header.login-caret
+        .login-content
+          a.logo(href='index.html')
+            img(src='/images/logo@2x.png', width='120', alt='')
+          | &#x9;&#x9;&#x9;
+          | &#x9;&#x9;&#x9;
+          p.description Dear user, log in to access the admin area!
+          // progress bar indicator
+          .login-progressbar-indicator
+            h3 43%
+            | &#x9;&#x9;&#x9;&#x9;
+            span logging in...
+      | &#x9;
+      | &#x9;
+      .login-progressbar
+        div
+      | &#x9;
+      | &#x9;
+      .login-form
+        .login-content
+          .form-login-error
+            h3 Invalid login
+            | &#x9;&#x9;&#x9;&#x9;
+            p
+              | Enter 
+              strong demo
+              | /
+              strong demo
+              |  as login and password.
+          | &#x9;&#x9;&#x9;
+          | &#x9;&#x9;&#x9;
+          form#form_login(method='post', role='form')
+            .form-group
+              .input-group
+                .input-group-addon
+                  i.entypo-user
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                input#username.form-control(type='text', name='username', placeholder='Username', autocomplete='off')
+            | &#x9;&#x9;&#x9;&#x9;
+            | &#x9;&#x9;&#x9;&#x9;
+            .form-group
+              .input-group
+                .input-group-addon
+                  i.entypo-key
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                input#password.form-control(type='password', name='password', placeholder='Password', autocomplete='off')
+            .form-group
+              button.btn.btn-primary.btn-block.btn-login(type='submit')
+                i.entypo-login
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Login In
+            // Implemented in v1.1.4
+            //
+              You can also use other social network buttons
+              <div class="form-group">
+              <button type="button" class="btn btn-default btn-lg btn-block btn-icon icon-left twitter-button">
+              Login with Twitter
+              <i class="entypo-twitter"></i>
+              </button>
+              </div>
+              <div class="form-group">
+              <button type="button" class="btn btn-default btn-lg btn-block btn-icon icon-left google-button">
+              Login with Google+
+              <i class="entypo-gplus"></i>
+              </button>
+              </div>
+          | &#x9;&#x9;&#x9;
+          | &#x9;&#x9;&#x9;
+          | &#x9;&#x9;&#x9;
+          .login-bottom-links
+            a.link(href='extra-forgot-password.html') Forgot your password?
+            | &#x9;&#x9;&#x9;&#x9;
+            | &#x9;&#x9;&#x9;&#x9;
+    // Bottom Scripts
+    script(src='/js/gsap/main-gsap.js')
+    | &#x9;
+    script(src='/js/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js')
+    | &#x9;
+    script(src='/js/bootstrap.js')
+    | &#x9;
+    script(src='/js/joinable.js')
+    | &#x9;
+    script(src='/js/resizeable.js')
+    | &#x9;
+    script(src='/js/neon-api.js')
+    | &#x9;
+    script(src='/js/jquery.validate.min.js')
+    | &#x9;
+    script(src='/js/neon-login.js')
+    | &#x9;
+    script(src='/js/neon-custom.js')
+    | &#x9;
+    script(src='/js/neon-demo.js')

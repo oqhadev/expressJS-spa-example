@@ -1,0 +1,43 @@
+.col-md-6.col-sm-4.col-xs-12.clearfix.pull-right
+            ul.user-info.pull-right
+              // Profile Info
+              li.profile-info.dropdown.pull-right
+                // add class "pull-right" if you want to place this from right
+                a.dropdown-toggle(href='#', data-toggle='dropdown')
+                  | {user.nama}
+                  img.img-circle(src='/images/thumb-1@2x.png', alt='', width='44')
+                | 
+                | 
+                ul.dropdown-menu
+                  // Reverse Caret
+                  li.caret
+                  // Profile sub-links
+                  li
+                    a(href='extra-timeline.html')
+                      i.entypo-user
+                      | Edit Profile
+                  | 
+                  | 
+                  li
+                    a(href='mailbox.html')
+                      i.entypo-mail
+                      | Inbox
+                  | 
+                  | 
+                  li
+                    a(href='extra-calendar.html')
+                      i.entypo-calendar
+                      | Calendar
+                  | 
+                  | 
+                  li
+                    a(href='#')
+                      i.entypo-clipboard
+                      | Tasks
+                  li
+                    a(href='/logout-admin')
+                     i.entypo-logout.right
+                     | Log Out 
+            | 
+            | 
+          
